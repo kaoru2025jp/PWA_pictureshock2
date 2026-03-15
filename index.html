@@ -67,5 +67,29 @@ function change(){
 }
 </script>
 
+ <script>
+
+function calculate(){
+
+const B=parseFloat(document.getElementById("B").value)||0
+const S=parseFloat(document.getElementById("S").value)||0
+const T=parseFloat(document.getElementById("T").value)||1
+const V=parseFloat(document.getElementById("V").value)||0
+const r=parseFloat(document.getElementById("r").value)||0
+const X=parseFloat(document.getElementById("X").value)||0
+
+const negotiationCost=(B-S)/T
+const M=(B*V-negotiationCost)/(V*Math.exp(-r*X))
+
+document.getElementById("result").innerHTML=
+"交渉コスト : "+negotiationCost.toFixed(2)
++"<br>債券評価価格 : "+M.toFixed(2)
+
+}
+
+</script>
+
+
+
 </body>
 </html>
