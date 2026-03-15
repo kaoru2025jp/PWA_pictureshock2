@@ -13,6 +13,32 @@
 <img id="photo" src="images/photo1.png" width="300" onclick="change()">
 </section>
 
+ <section>
+<h2>評価計算</h2>
+<label>B (差し押さえ債権)</label>
+<input id="B" type="number" value="100">
+
+<label>S (交換銘柄評価)</label>
+<input id="S" type="number" value="60">
+
+<label>T (交渉バロメーター)</label>
+<input id="T" type="number" value="10">
+
+
+<label>V (市場期待値)</label>
+<input id="V" type="number" value="100">
+
+<label>r (割引率)</label>
+<input id="r" type="number" value="0.05">
+
+<label>X (期間)</label>
+<input id="X" type="number" value="1">
+
+<button onclick="calculate()">計算</button>
+
+<p id="result"></p>
+</section>
+
  
  
 <script>
